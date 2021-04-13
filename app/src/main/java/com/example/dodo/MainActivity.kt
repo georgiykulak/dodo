@@ -21,6 +21,9 @@ class MainActivity : Activity()
         val adapter = ArrayAdapter< String >(this, android.R.layout.simple_list_item_1)
         list_view.adapter = adapter
 
+        adapter.add("My name is Кулак Георгий Константинович \uD83D\uDC7E")
+        edit_text.setText("11")
+
         add_button.setOnClickListener {
             val text = edit_text.text.toString()
             adapter.add(text)
